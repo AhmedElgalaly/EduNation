@@ -1,0 +1,54 @@
+.mainsec {
+    margin: 1em;
+}
+
+.bigboard {
+    width: 80%;
+    height: 35em;
+    display: block;
+    margin: 3em auto;
+    border-radius: 20px;
+    /*background-image: url(../media/images/svg/Lunching_Soon_EduNation.svg);
+    background-size: contain;*/
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+.bigboard img {
+    width: 100%;
+    height: 35.2em;
+    transition: 500ms;
+}
+
+.bigboard img:hover{
+    transform: scale(0.9);
+}
+
+.title1 {
+    font-weight: bold;
+    width: 10em;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.contentHolder {
+    padding-left: 40px;
+    width: 100%;
+    height: 10em;
+}
+
+.content {
+    background-color: grey;
+    width: 13em;
+    height: 8em;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    display: block;
+    float: left;
+    transition: 500ms;
+}
+
+.content:hover {
+    transform: scale(1.1);
+}
+

@@ -2,8 +2,9 @@
 /* web config */
 
 :root {
-    --main-color: #500052 ;
-    --background-color: #a8a8a8
+    --main-color: #A43563 ;
+    --background-color: #322139;
+    --nav-bar-color: aliceblue;
 }
 
 * {
@@ -17,31 +18,43 @@
 
 /* header */
 
-.upperHeader {
+.upperHeader{
     display: flex;
-    justify-content: flex-end;
-    height: 2.7em;
+    justify-content: space-between;
+} 
+
+.upperHeader .right{
+    height: 4.36em;
+    display: inline-block;
     background-color: var(--background-color);
 }
+
+.upperHeader .left a{
+    width: 5em;
+}
+
+
+
 
 /* the navbar that holds the login menu */
 
 .upperNav {
     text-decoration: none;
     padding-right:2em;
-    padding-top: 0.5625em;
+    padding-top: 1em;
     color:aliceblue
 }
 
 .globe,
 .dashboard {
+    display: inline-block;
     scale: 1.6;
 }
 
 /* the main navbar */
 
 nav {
-    background-color: aliceblue;
+    background-color: var(--nav-bar-color);
     display: flex;
     justify-content: space-between;
     padding: 0.75em 3em 0.5625em 3em;
@@ -56,13 +69,20 @@ nav {
     font-weight: 700;
     display: inline-block;
     transition: 500ms ease;
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 /* effects on nav elements */
 
 .navElements:hover {
     transform: scale(1.1);
+}
+
+
+/* body */
+
+body {
+    background-color: var(--background-color);
 }
 
 
