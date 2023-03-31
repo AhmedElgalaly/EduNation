@@ -2,7 +2,7 @@
 /* web config */
 
 :root {
-    --main-color: #A43563 ;
+    --main-color: #FC5198 ;
     --background-color: #322139;
     --nav-bar-color: aliceblue;
 }
@@ -95,6 +95,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .hearts {

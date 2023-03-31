@@ -1,0 +1,52 @@
+.backg {
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background-image: url(../media/images/png/background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.about {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 1em;
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.lastsec {
+    width: 80%;
+    height: 25em;
+    display: grid;
+    margin: 2em auto;
+    grid-template-columns:  1fr 4fr;
+    align-content: center;
+    column-gap: 4em;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    height: 200px;
+    transition: 500ms;
+}
+
+.image:hover {
+    transform: translateX(10px);
+}
+
+.text {
+    height: 200px;
+    color: #FC5198;
+    font-weight: bold;
+    text-transform: capitalize;
+    overflow: auto;
+
+}
