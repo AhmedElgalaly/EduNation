@@ -1,5 +1,4 @@
 <!--use ! to generate basic html template or copy the content inside template file-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,16 +15,15 @@
       rel="shortcut icon"
       href="../media/images/svg/favaicon_EduNation.ico"
       type="image/x-icon"
-    />
+      />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="scripts/mainscript.js"></script>
-    <link rel="stylesheet" href="../styles/qa.css">
+    <link rel="stylesheet" href="../styles/qa.css" />
     <title>EduNation</title>
-
   </head>
   <body>
     <header>
@@ -88,11 +86,11 @@
       <section class="faq-container">
         <div class="faq-one">
           <!-- faq question -->
-          <h1 class="faq-page"> What types of courses do you offer?</h1>
+          <h1 class="faq-page">What types of courses do you offer?</h1>
           <!-- faq answer -->
           <div class="faq-body">
             <p>
-              We offer a wide range of courses across multiple disciplines, 
+              We offer a wide range of courses across multiple disciplines,
               including business, technology, healthcare, education, and more.
             </p>
           </div>
@@ -104,8 +102,9 @@
           <!-- faq answer -->
           <div class="faq-body">
             <p>
-              The course duration varies depending on the course and its complexity.
-               Some are self-paced and can be completed in a matter of weeks, while others may take several months.
+              The course duration varies depending on the course and its
+              complexity. Some are self-paced and can be completed in a matter
+              of weeks, while others may take several months.
             </p>
           </div>
         </div>
@@ -118,8 +117,9 @@
           <!-- faq answer -->
           <div class="faq-body">
             <p>
-              Our courses are designed to be accessible to anyone, regardless of their educational background or degree.
-               But the prerequisites for each course vary based on subject matter.
+              Our courses are designed to be accessible to anyone, regardless of
+              their educational background or degree. But the prerequisites for
+              each course vary based on subject matter.
             </p>
           </div>
         </div>
@@ -132,8 +132,10 @@
           <!-- faq answer -->
           <div class="faq-body">
             <p>
-              Yes, depending on the course, we offer completion certificates and diploma or degree programs that are nationally or regionally accredited.
-               These programs are designed to help students move forward in their professional careers.
+              Yes, depending on the course, we offer completion certificates and
+              diploma or degree programs that are nationally or regionally
+              accredited. These programs are designed to help students move
+              forward in their professional careers.
             </p>
           </div>
         </div>
@@ -146,8 +148,13 @@
           <!-- faq answer -->
           <div class="faq-body">
             <p>
-              Our courses use a combination of methods, such as online videos, interactive exercises, quizzes, and personalized assignments to interactive live sessions, expert analysis, and scenario-based learning to provide the best learning experience.
-               We use both synchronous and asynchronous approaches to ensure that the material is delivered effectively to all students, regardless of their learning style.
+              Our courses use a combination of methods, such as online videos,
+              interactive exercises, quizzes, and personalized assignments to
+              interactive live sessions, expert analysis, and scenario-based
+              learning to provide the best learning experience. We use both
+              synchronous and asynchronous approaches to ensure that the
+              material is delivered effectively to all students, regardless of
+              their learning style.
             </p>
           </div>
         </div>
@@ -165,26 +172,27 @@
         <a class="social twitter"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
-
+    <script src="scripts/mainscript.js"></script>
   </body>
-  <script src="scripts/mainscript.js"></script>
+
+  
   <script>
-    debugger;
     let faq = document.getElementsByClassName("faq-page");
-let i;
-for (i = 0; i < faq.length; i++) {
-  faq[i].addEventListener("click", function () {
-      /* Toggle between adding and removing the "active" class,
+    let i;
+    for (i = 0; i < faq.length; i++) {
+      faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
       to highlight the button that controls the panel */
-      this.classList.toggle("active");
-      /* Toggle between hiding and showing the active panel */
-      let body = this.nextElementSibling;
-      if (body.style.display === "block") {
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        let body = this.nextElementSibling;
+        if (body.style.display === "block") {
           body.style.display = "none";
-      } else {
+        } else {
           body.style.display = "block";
-      }
-  });
-}
+        }
+      });
+    }
   </script>
+
 </html>
