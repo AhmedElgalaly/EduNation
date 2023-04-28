@@ -4,7 +4,7 @@ let videoTitle = "empty";
 function prev(){
     param = window.location.href;
 
-    videoLink = param.substring(param.indexOf("https://www.you"),param.indexOf("|"));
+    videoLink = param.substring(param.indexOf("?http")+1,param.indexOf("|"));
 
     videoTitle = param.substring(param.indexOf("|")+1,param.length);
 
@@ -13,6 +13,10 @@ function prev(){
     document.getElementById("tilte").innerHTML = `<h1>${videoTitle}</h1>`;
     document.getElementById("video").innerHTML = `<iframe width="80%" height="500px" src="${videoLink}" frameborder="0"></iframe>`;
 
+    console.log(param);
+    console.log(videoLink);
+    console.log(videoTitle);
+    
     
 }
 
@@ -31,4 +35,12 @@ for (i = 0; i < faq.length; i++) {
             body.style.display = "block";
         }
     });
+}
+
+function signUpM(){
+    alert("sorry currently we are unable to process your data 😥");
+}
+
+function goto(link){
+    window.location.href = link;
 }

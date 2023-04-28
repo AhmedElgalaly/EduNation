@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="../styles/signUpStyle.css"> -->
     <link rel="shortcut icon" href="../media/images/svg/favaicon_EduNation.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/mainstyle.css">
+    <script src="../scripts/mainscript.js"></script>
 </head>
 <body>
     <a href="../index.html">
@@ -17,7 +18,7 @@
     <div class="signUp-main-box">
 
         <div class="signUp-main">
-            <form>
+            <form  onsubmit="signUpM();">
                 <img class="signUp-logo" src="../media/images/svg/favaicon_EduNation.svg" alt="EduNation Logo">
                 
                 <div class="form-group">
@@ -25,7 +26,7 @@
                     <input type="text" name="uname" id="uname">
                     <span class="bar"></span>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="email">Email</label>
                 <input type="text" name="email" id="email">
@@ -46,7 +47,7 @@
             
             
             
-            <button class="button" type="submit">Create New Account</button>
+            <button class="button" type="submit" value="Submit">Create New Account</button>
         </form>
     </div>
 </div>
