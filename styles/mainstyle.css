@@ -133,3 +133,536 @@ footer {
     transform: scale(2.6);
     color: #00acee
 }
+
+/* about page */
+
+.backg {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.about {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 1em;
+    font-size: 35pt;
+    font-weight: bold;
+    color: aliceblue
+}
+
+.lastsec {
+    width: 80%;
+    height: 25em;
+    display: grid;
+    margin: 2em auto;
+    grid-template-columns:  1fr 4fr;
+    align-content: center;
+    column-gap: 4em;
+}
+
+.image-about img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-about {
+    height: 200px;
+    transition: 500ms;
+}
+
+.image-about:hover {
+    transform: translateX(10px);
+}
+
+.text-about {
+    height: 200px;
+    color: #FC5198;
+    font-weight: bold;
+    text-transform: capitalize;
+    overflow: auto;
+
+}
+
+/* categories page */
+
+body {
+    height: 100%;
+  }
+  
+  html {
+    background: #eee;
+  }
+  .tableCell{
+      vertical-align:top;
+       padding: 0px 0 0 50px;
+  border: 0;
+  }
+  .box {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(0,0,0 , 0);
+     position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  .categoryTable{
+      width: 100%
+  }
+  .wave {
+    opacity: 0.4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: #0af;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: 0.1;
+    background: yellow;
+  }
+  .textcolor{color: white;
+  font-family: sans-serif;
+      font-style: italic;
+      font-weight: bold ;
+      
+  }
+  .color{color:deeppink;}
+  .box:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(230, 140, 236, 1),
+      rgba(221, 238, 255, 0) 80%,
+      rgba(255,255,255, 0)
+    );
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(0,0,0, 0.1);
+    text-indent: 0.3em;
+  }
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* the technologies used  page */
+
+  .wrapper {
+    width: 80%;
+    margin: 5em auto;
+    display: grid;
+    grid-template-columns: repeat(3, 21.6%);
+    justify-content: space-evenly;
+}  
+
+.card {
+    height: 41em;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .image{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.card .text {
+    width: 100%;
+    height: 100%;
+    padding: 0 1em;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+
+.buttonarea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.button {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #322139;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: #FC5198;
+}
+    
+  
+/* the q&a page */
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    color: #FC5198;
+    text-align: center;
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #FC5198;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*
+.active,
+.faq-page:hover {
+    background-color: rgb(22, 22, 22);
+   
+}
+*/
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px; 
+    color: white;
+    background-color: #322139;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #322139;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/* the login and sign up page */
+
+/* web config */
+
+
+
+.auth-pic{
+    height: 5em;
+    position: fixed;
+}
+
+.signUp-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 430px;
+    height: 690px;
+    display: grid;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 15%);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    appearance: none;
+    display: block;
+    background: #fafafa;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--background-color);
+}
+  
+input:focus {
+    outline: none;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+  
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: var(--main-color);
+    transition: all 0.2s ease;
+}
+  
+.bar:before {
+    left: 50%;
+}
+  
+.bar:after {
+    right: 50%;
+}
+  
+  
+/* active */
+  
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}  
+  
+  /* Highlight */
+  
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.button-auth {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: .3em 0 1em 0;
+    width: 100%;
+    vertical-align: middle;
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: var(--background-color);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.button-auth:hover{
+    background-color: var(--main-color);
+}
+  
+  
+  /* active */
+  
+input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+  
+  
+  /* Animations */
+  
+@keyframes inputHighlighter {
+    from {
+      background: var(--main-color);
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .signUp-main {
+        width: 100%;
+    }
+    form {
+        width: 80%;
+    }
+    .auth-pic{
+        margin: auto 0px;
+    }
+    .signUp-logo{
+        width: 200px;
+        height: 5em;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 376px) {
+    .signUp-main{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    .signUp-logo{
+        width: 200px;
+        height: 5em;
+        margin: 20px auto;
+    }
+}
+
+/* the math styleing  */
+
+.text{
+    text-align:center;
+}
+
+.title2 {
+    font-weight: bold;
+    width: 10em;
+    padding: 20px;
+    color: deeppink
+}
+
+
+/* the index styleing  */
+
+.mainsec {
+    margin: 1em;
+}
+
+.bigboard {
+    width: 80%;
+    height: 35em;
+    display: block;
+    margin: 3em auto;
+    border-radius: 20px;
+    /*background-image: url(../media/images/svg/Lunching_Soon_EduNation.svg);
+    background-size: contain;*/
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+.bigboard img {
+    width: 100%;
+    height: 35.2em;
+    transition: 500ms;
+}
+
+.bigboard img:hover{
+    transform: scale(0.9);
+}
+
+.title1 {
+    font-weight: bold;
+    width: 10em;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.contentHolder {
+    padding-left: 40px;
+    width: 100%;
+    height: 10em;
+}
+
+.content {
+    background-color: grey;
+    width: 13em;
+    height: 8em;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    display: block;
+    float: left;
+    transition: 500ms;
+}
+
+.content:hover {
+    transform: scale(1.1);
+}
+
