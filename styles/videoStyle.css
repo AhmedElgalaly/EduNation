@@ -1,0 +1,15 @@
+.title{
+    width: 80%;
+    height: 80px;
+    background-color: aliceblue;
+    margin: 20px auto;
+    text-align: center;
+    text-justify: center;
+    border-radius: 20px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}

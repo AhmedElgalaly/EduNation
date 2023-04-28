@@ -52,7 +52,7 @@ font-family: sans-serif;
     font-weight: bold ;
     
 }
-.color{ color:deeppink}
+.color{color:deeppink;}
 .box:after {
   content: "";
   display: block;
